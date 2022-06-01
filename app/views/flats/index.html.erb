@@ -1,0 +1,15 @@
+<div class = navbar>
+  <h1 class = h1nav> <a href="#"> Simple Airbnb</a> </h1>
+ <%= form_for [@flat] do |f| %>
+  <%= f.
+  code .:content %>
+  <%= f.input :rating %>
+  <%= f.submit %>
+<% end %>
+  </div>
+
+  <h1>All Flats</h1>
+
+  <% @flats.each do |flat| %>
+    <%= flat.name %>
+  <% end %>
